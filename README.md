@@ -27,7 +27,7 @@ First, I replace 'Y' and 'N' to booleans. Then, if the injury description points
 
 ### `sex` column
 
-I inspect the `names` column to check if it has some information about the sex. If so, the correspondent `sex` cell is updated. If there is no information, 'U' (for 'unknown') is udes.
+I inspect the `names` column to check if it has some information about the sex. If so, the correspondent `sex` cell is updated. If there is no information, 'U' (for 'unknown') is used.
 
 ### `age` column
 
@@ -54,4 +54,4 @@ Some other columns still contained NaNs. Given that its number was sufficiently 
 
 ### End step: filling in the remaining rows
 
-Given that the final data frmae must contain over 20k rows, dropping them was not an option. Instead, I wrote a function that generates random rows based on pieces of information from previously cleaned rows. Those were appended to the subset dataframe `df` to form `clean_full_df`. Finally, `clean_full_df` is exported to a .csv file.
+Given that the final data frame must contain over 20k rows, dropping them was not an option. Instead, I wrote a function that generates random rows based on pieces of information from previously cleaned rows. Those were appended to the subset dataframe `df` to form `clean_full_df`. Finally, `clean_full_df` is exported to a .csv file.
